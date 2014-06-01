@@ -15,12 +15,19 @@ Hytest.hsc then run against them. Hytest has also been modified. Instead of exam
 
 The basic observation is that more network means slower system. The goal is to find the best compromise. That is, cannot support 100+ local systems but want/must give users a reasonable environment to work in.
 
-Example Plot - HyCreate across configuations.
-![hycreate_init.png](./documentation/hycreate_init.png)
-
 Intention:
 work is just initialised. goal is to test the differnet types of programs, some are db intensive, some are ts intensive, some write lots of report/output and feed results back to modifications of software hosting arrangements and to software vendor.
 
+
+Example Plot - HyCreate across configuations.
+
+![hycreate_init.png](./2014-01-15-TestJobs/documentation/hycreate_init.png)
+
+
 See Planning Doc.
+[TestingHydstraLayouts-ProjectStartup2014-01-17.docx](./2014-01-15-TestJobs/documentation/TestingHydstraLayouts-ProjectStartup2014-01-17.docx)
 
 Config Matrix:
+
+![Various Combinations](./2014-01-15-TestJobs/documentation/configurationmatrix.png)
+
