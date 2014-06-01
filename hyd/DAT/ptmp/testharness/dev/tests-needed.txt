@@ -1,0 +1,38 @@
+(tom)
+hyxmlout
+- start /w hyxmlout 21000* A 00:00_01/01/1900 00:00_01/01/1800 SiteInfo   . hyxmlout_siteinfo.xml
+- start /w hyxmlout 21000* A 00:00_01/01/1900 00:00_01/01/1800 LATESTDATA . hyxmlout_latestdata.xml
+
+H:\Hydstra\systems\v10.4-SW\hyd\DAT\PTMP\testharness\TestJobs\hyxmlout_01_SiteInfo_210.bat
+H:\Hydstra\systems\v10.4-SW\hyd\DAT\PTMP\testharness\TestJobs\hyxmlout_02_Latestdata_210.bat
+H:\Hydstra\systems\v10.4-SW\hyd\DAT\PTMP\testharness\TestJobs\hyxmlout_03_SiteInfo_all.bat
+H:\Hydstra\systems\v10.4-SW\hyd\DAT\PTMP\testharness\TestJobs\hyxmlout_04_Latestdata_all.bat
+
+
+- DWRREPCD.HSC
+- hyaudit
+
+(garry carr)
+- telview
+- hymanage site - start and stop
+start /w hymanage site /report=SiteShutdown
+start /w hymanage site /area=[public.aprovsites] /report=SiteShutdown 
+
+- rating workbench 410001, 410004
+
+(malcolm robinson)
+
+- orphans checks
+- validation checks
+start /w hymanage instruments /TOOLS=Validate /OUTPUT=c:\temp\instruments_validate_0.txt /PARAMS=t,0,3000,t
+hymanage instruments /TOOLS=Validate /OUTPUT=c:\temp\instruments_validate_1.txt /PARAMS=t,1,3000,t
+hymanage instruments /TOOLS=Validate /OUTPUT=c:\temp\instruments_validate_2.txt /PARAMS=t,2,3000,t
+
+- hyaudit test 26.
+- hydbsql - some of the instrument reports 
+
+site visit
+
+hymanage site
+hymanage site /TOOLS=Orphans /OUTPUT=c:\temp\site_orphans.txt /PARAMS=t,t,f,t
+hymanage site /TOOLS=Validate /OUTPUT=c:\temp\site_validate_0.txt /PARAMS=t,0,3000,t
