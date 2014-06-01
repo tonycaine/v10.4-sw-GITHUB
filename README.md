@@ -26,9 +26,3 @@ Example Plot - HyCreate across configuations.
 
 See Planning Doc.
 [TestingHydstraLayouts-ProjectStartup2014-01-17.docx](./2014-01-15-TestJobs/documentation/TestingHydstraLayouts-ProjectStartup2014-01-17.docx)
-
-Config Matrix:
-
-![Various Combinations](./2014-01-15-TestJobs/documentation/configurationmatrix.png)
-
-
